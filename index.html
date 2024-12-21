@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang TC', 'Microsoft JhengHei', sans-serif;
-            line-height: 1.6;
+            line-height: 1.8;
             max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
@@ -54,6 +54,7 @@
             background-color: #f8f9fa;
             padding: 10px;
             display: inline-block;
+            margin-bottom: 20px;
         }
 
         .photo-gallery {
@@ -67,7 +68,7 @@
         }
 
         .photo-square {
-            width: calc(50% - 10px); /* 確保一排兩張，間距均分 */
+            width: calc(50% - 10px); /* 預設一行兩張 */
             aspect-ratio: 1 / 1; /* 固定為正方形 */
             overflow: hidden; /* 隱藏超出容器的部分 */
             border-radius: 5px; /* 圓角 */
@@ -75,8 +76,8 @@
         }
 
         .photo-square img {
-            width: 100%; /* 圖片寬度填滿容器 */
-            height: 100%; /* 圖片高度填滿容器 */
+            width: 100%;
+            height: 100%;
             object-fit: cover; /* 裁剪圖片，保持比例 */
         }
 
@@ -89,6 +90,25 @@
 
             .photo-square {
                 width: 100%; /* 小螢幕每行顯示一張 */
+            }
+
+            body {
+                padding: 10px; /* 減少內邊距 */
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+            }
+
+            h2 {
+                font-size: 1.2em;
+            }
+
+            .toc {
+                font-size: 0.9em;
+                padding: 8px;
             }
         }
     </style>
@@ -141,8 +161,8 @@
         </ul>
     </div>
     <h2>生平簡介</h2>
-    <p>李碧玉女士（1923年10月29日－2024年12月9日），出生於花蓮玉里鎮的三民村，一生心繫家庭，充滿堅毅與智慧。她是12個孩子的母親，在70歲高齡時學習游泳和乒乓球，並參加比賽獲得老人組第三名。</p>
-    <p>李碧玉女士一生子孫滿堂，享有四代同堂的家庭幸福。然而，她的生活不僅止於家庭，她努力幫助丈夫經營雜貨店，努力拉拔12個孩子長大。</p>
+    <p>李碧玉女士（1923年10月29日－2024年12月9日）出生於花蓮玉里鎮的三民村，一生心繫家庭，充滿堅毅與智慧。她是12個孩子的母親，在70歲高齡時學習游泳和乒乓球，並參加比賽獲得老人組第三名。</p>
+    <p>李碧玉女士一生子孫滿堂，享有四代同堂的家庭幸福。然而，她的生活不僅止於家庭，她努力幫助丈夫經營雜貨店，努力拉拔12孩子長大。</p>
 
     <h2>與黃雙旺的故事</h2>
     <p>黃雙旺，李碧玉的丈夫，民國9年（1920年）出生，年輕時曾赴日本留學，返國後到後山開墾，並結識了李碧玉，建立了這個溫暖的大家庭。</p>
@@ -160,22 +180,12 @@
                 <img src="img/465154758_9129269637104001_2822002184272476962_n.jpg" alt="畫圖">
             </div>
         </div>
-        <br>
         <div class="photos-row">
             <div class="photo-square">
                 <img src="img/465365751_9135207039843594_741647200879295979_n.jpg" alt="畫圖">
             </div>
             <div class="photo-square">
                 <img src="img/70492081_2693480647330372_3046614353970200576_n.jpg" alt="家庭合照">
-            </div>
-        </div>
-        <br>
-        <div class="photos-row">
-            <div class="photo-square">
-                <img src="img/465365773_9096698513675188_2782814334440779283_n.jpg" alt="家庭合照">
-            </div>
-            <div class="photo-square">
-                <img src="img/LINE_ALBUM_老照片_241221_1.jpg" alt="游泳上報紙">
             </div>
         </div>
     </div>
