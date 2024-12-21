@@ -137,64 +137,56 @@
     <h2>照片集</h2>
     <p>以下為李碧玉女士的珍貴照片</p>
     <div class="photos-row">
-        <!-- 前三張圖片 (9:16) -->
-        <div class="photo-9-16">
+        <!-- 照片改為正方形 -->
+        <div class="photo-square">
             <img src="img/年輕時的李碧玉.jpg" alt="年輕時的李碧玉">
         </div>
-        <div class="photo-9-16">
+        <div class="photo-square">
             <img src="img/465154758_9129269637104001_2822002184272476962_n.jpg" alt="畫圖">
         </div>
-        <div class="photo-9-16">
+    </div>
+    <div class="photos-row">
+        <div class="photo-square">
             <img src="img/465365751_9135207039843594_741647200879295979_n.jpg" alt="畫圖">
         </div>
-    </div>
-    <div class="photos-row">
-        <!-- 後三張圖片 (16:9) -->
-        <div class="photo-16-9">
+        <div class="photo-square">
             <img src="img/70492081_2693480647330372_3046614353970200576_n.jpg" alt="家庭合照">
         </div>
-        <div class="photo-16-9">
+    </div>
+    <div class="photos-row">
+        <div class="photo-square">
             <img src="img/465365773_9096698513675188_2782814334440779283_n.jpg" alt="家庭合照">
         </div>
-        <div class="photo-16-9">
+        <div class="photo-square">
             <img src="img/LINE_ALBUM_老照片_241221_1.jpg" alt="游泳上報紙">
         </div>
-    </div>
-
-    <div class="photos-row">
     </div>
 </div>
 
 <style>
-    .photo-gallery {
-        margin-top: 20px;
-    }
     .photos-row {
         display: flex;
         justify-content: space-between; /* 均分圖片 */
         gap: 10px; /* 圖片之間的間距 */
         margin-bottom: 20px; /* 每排之間的距離 */
     }
-    .photo-9-16, .photo-16-9 {
-        flex: 1; /* 確保每個圖片容器等寬 */
-        max-width: 300px; /* 與 .infobox 對齊 */
+
+    .photo-square {
+        width: calc(50% - 5px); /* 確保一排兩張，兩側間距均分 */
+        aspect-ratio: 1 / 1; /* 固定為正方形 */
         overflow: hidden; /* 隱藏超出容器的部分 */
         border: 1px solid #ccc; /* 可選：邊框 */
         border-radius: 5px; /* 可選：圓角 */
         background-color: #f8f8f8; /* 可選：背景色 */
     }
-    .photo-9-16 {
-        aspect-ratio: 9 / 16; /* 固定 9:16 比例 */
-    }
-    .photo-16-9 {
-        aspect-ratio: 16 / 9; /* 固定 16:9 比例 */
-    }
-    .photo-9-16 img, .photo-16-9 img {
-        width: 90%; /* 圖片寬度填滿容器 */
+
+    .photo-square img {
+        width: 100%; /* 圖片寬度填滿容器 */
         height: 100%; /* 圖片高度填滿容器 */
         object-fit: cover; /* 裁剪圖片，保持比例 */
     }
 </style>
+
 
 </body>
 
