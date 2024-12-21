@@ -8,7 +8,106 @@
 
     <meta charset="UTF-8">
     <title>李碧玉 - 維甚白科</title>
-    <style>
+    
+    <link rel="icon" href="img/wikipedia.ico">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><img src="img/wo.png" alt="圖片"></li>
+            <li><a href="#">首頁</a></li>
+            <li><a href="#">關於我們</a></li>
+                        <li><a href="#">關於我們</a></li>
+        </ul>
+    </nav>
+
+
+    <h1 id="intro">李碧玉</h1>
+    <div class="infobox">
+        <table>
+            <tr>
+                <th colspan="2">李碧玉</th>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <img src="img/yu.png" alt="李碧玉照片" />
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2">基本資料</th>
+            </tr>
+            <tr>
+                <td>本名</td>
+                <td>李碧玉</td>
+            </tr>
+            <tr>
+                <td>國籍</td>
+                <td>中華民國</td>
+            </tr>
+            <tr>
+                <td>出生</td>
+                <td>1923年10月29日</td>
+            </tr>
+            <tr>
+                <td>出生地</td>
+                <td>臺灣花蓮</td>
+            </tr>
+            <tr>
+                <td>配偶</td>
+                <td>黃雙旺</td>
+            </tr>
+        </table>
+    </div>
+    <div class="toc">
+        <h2>目錄</h2>
+        <ul>
+            <li>1 生平簡介</li>
+            <li>2 生命軌跡</li>
+            <li>3 與黃雙旺的故事</li>
+        </ul>
+    </div>
+     <h2>生平簡介</h2>
+    <p>李碧玉女士（1923年10月29日－2024年12月9日）出生於花蓮玉里鎮的三民村，一生心繫家庭，充滿堅毅與智慧。她是12個孩子的母親，在70歲高齡時學習游泳和乒乓球，並參加比賽獲得老人組第三名。</p>
+    <p>李碧玉女士一生子孫滿堂，享有四代同堂的家庭幸福。然而，她的生活不僅止於家庭，她努力幫助丈夫經營雜貨店，努力拉拔12孩子長大。</p>
+
+    <h2 id="story">與黃雙旺的故事</h2>
+    <p>黃雙旺，李碧玉的丈夫，民國9年（1920年）出生，年輕時曾赴日本留學，返國後到後山開墾，並結識了李碧玉，建立了這個溫暖的大家庭。</p>
+
+    <p>在50年代，黃雙旺事業蓬勃發展。他經營雜貨舖、燒磚瓦窯、菸草種植與薰菸寮、香茅油廠等事業，還種植香蕉、鳳梨、西瓜，以及稻田，家中甚至擁有當時罕見的鐵牛車與兩頭牛，還有羊隻與許多員工。每逢初一、十五，磚瓦出窯時，他還會以家養的豬款待員工，善待員工的精神深深影響了後代子孫。</p>
+
+    <p>黃雙旺雖然早在50歲離開人世，但他留下的精神與價值觀深植於子孫心中。他以善待員工為準則，這份遺訓在他的子女創業中延續。</p>
+
+    <div class="photo-gallery" id="photos">
+    <h2>照片集</h2>
+    <p>以下為李碧玉女士的珍貴照片</p>
+    <div class="photos-row">
+        <div class="photo-square">
+            <img src="img/年輕時的李碧玉.jpg" alt="年輕時的李碧玉">
+        </div>
+        <div class="photo-square">
+            <img src="img/465154758_9129269637104001_2822002184272476962_n.jpg" alt="畫圖">
+        </div>
+    </div>
+    <div class="photos-row">
+        <div class="photo-square">
+            <img src="img/465365751_9135207039843594_741647200879295979_n.jpg" alt="畫圖">
+        </div>
+        <div class="photo-square">
+            <img src="img/70492081_2693480647330372_3046614353970200576_n.jpg" alt="家庭合照">
+        </div>
+    </div>
+    <div class="photos-row">
+        <div class="photo-square">
+            <img src="img/465365773_9096698513675188_2782814334440779283_n.jpg" alt="家庭合照">
+        </div>
+        <div class="photo-square">
+            <img src="img/LINE_ALBUM_老照片_241221_1.jpg" alt="游泳上報紙">
+        </div>
+    </div>
+</div>
+
+<style>
     body {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang TC', 'Microsoft JhengHei', sans-serif;
         line-height: 1.6;
@@ -16,7 +115,14 @@
         margin: 0 auto;
         padding: 20px;
     }
-
+    nav ul {
+        display: flex;
+        align-items: center; /* 垂直置中 */
+        justify-content: flex-start; /* 靠左對齊 */
+    }
+    nav ul li img {
+        margin-right: 10px; /* 與文字或其他內容保持距離 */
+    }
     .infobox {
         float: right;
         border: 1px solid #a2a9b1;
@@ -77,99 +183,37 @@
         padding: 5px;
         background-color: #f9f9f9;
     }
-    </style>
-    <link rel="icon" href="img/wikipedia.ico">
-</head>
 
-<body>
-    <img src="img/WO.png" alt="維甚白科" />
-    <h1>李碧玉</h1>
-    <div class="infobox">
-        <table>
-            <tr>
-                <th colspan="2">李碧玉</th>
-            </tr>
-            <tr>
-                <td colspan="2" style="text-align: center;">
-                    <img src="img/yu.png" alt="李碧玉照片" />
-                </td>
-            </tr>
-            <tr>
-                <th colspan="2">基本資料</th>
-            </tr>
-            <tr>
-                <td>本名</td>
-                <td>李碧玉</td>
-            </tr>
-            <tr>
-                <td>國籍</td>
-                <td>中華民國</td>
-            </tr>
-            <tr>
-                <td>出生</td>
-                <td>1923年10月29日</td>
-            </tr>
-            <tr>
-                <td>出生地</td>
-                <td>臺灣花蓮</td>
-            </tr>
-            <tr>
-                <td>配偶</td>
-                <td>黃雙旺</td>
-            </tr>
-        </table>
-    </div>
-    <div class="toc">
-        <h2>目錄</h2>
-        <ul>
-            <li>1 生平簡介</li>
-            <li>2 生命軌跡</li>
-            <li>3 與黃雙旺的故事</li>
-        </ul>
-    </div>
-     <h2>生平簡介</h2>
-    <p>李碧玉女士（1923年10月29日－2024年12月9日）出生於花蓮玉里鎮的三民村，一生心繫家庭，充滿堅毅與智慧。她是12個孩子的母親，在70歲高齡時學習游泳和乒乓球，並參加比賽獲得老人組第三名。</p>
-    <p>李碧玉女士一生子孫滿堂，享有四代同堂的家庭幸福。然而，她的生活不僅止於家庭，她努力幫助丈夫經營雜貨店，努力拉拔12孩子長大。</p>
+    nav {
+        background-color: #f8f9fa;
+        border-bottom: 1px solid #a2a9b1;
+        padding: 10px;
+    }
 
-    <h2>與黃雙旺的故事</h2>
-    <p>黃雙旺，李碧玉的丈夫，民國9年（1920年）出生，年輕時曾赴日本留學，返國後到後山開墾，並結識了李碧玉，建立了這個溫暖的大家庭。
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+    }
 
-    <p>在50年代，黃雙旺事業蓬勃發展。他經營雜貨舖、燒磚瓦窯、菸草種植與薰菸寮、香茅油廠等事業，還種植香蕉、鳳梨、西瓜，以及稻田，家中甚至擁有當時罕見的鐵牛車與兩頭牛，還有羊隻與許多員工。每逢初一、十五，磚瓦出窯時，他還會以家養的豬款待員工，善待員工的精神深深影響了後代子孫。</p>
+    nav ul li {
+        display: inline;
+    }
 
-    <p>黃雙旺雖然早在50歲離開人世，但他留下的精神與價值觀深植於子孫心中。他以善待員工為準則，這份遺訓在他的子女創業中延續。</p>
+    nav ul li a {
+        text-decoration: none;
+        color: #007BFF;
+        font-weight: bold;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
 
+    nav ul li a:hover {
+        background-color: #e2e6ea;
+    }
 
-    <div class="photo-gallery">
-    <h2>照片集</h2>
-    <p>以下為李碧玉女士的珍貴照片</p>
-    <div class="photos-row">
-        <!-- 照片改為正方形 -->
-        <div class="photo-square">
-            <img src="img/年輕時的李碧玉.jpg" alt="年輕時的李碧玉">
-        </div>
-        <div class="photo-square">
-            <img src="img/465154758_9129269637104001_2822002184272476962_n.jpg" alt="畫圖">
-        </div>
-    </div>
-    <div class="photos-row">
-        <div class="photo-square">
-            <img src="img/465365751_9135207039843594_741647200879295979_n.jpg" alt="畫圖">
-        </div>
-        <div class="photo-square">
-            <img src="img/70492081_2693480647330372_3046614353970200576_n.jpg" alt="家庭合照">
-        </div>
-    </div>
-    <div class="photos-row">
-        <div class="photo-square">
-            <img src="img/465365773_9096698513675188_2782814334440779283_n.jpg" alt="家庭合照">
-        </div>
-        <div class="photo-square">
-            <img src="img/LINE_ALBUM_老照片_241221_1.jpg" alt="游泳上報紙">
-        </div>
-    </div>
-</div>
-
-<style>
     .photos-row {
         display: flex;
         justify-content: space-between; /* 均分圖片 */
